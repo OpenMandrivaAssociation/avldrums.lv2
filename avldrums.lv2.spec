@@ -16,6 +16,7 @@ BuildRequires:		pkgconfig(glu)
 BuildRequires:		pkgconfig(glib-2.0)
 BuildRequires:		pkgconfig(lv2)
 BuildRequires:		pkgconfig(pango)
+BuildRequires:		pkgconfig(pangocairo)
 BuildRequires:		pkgconfig(x11)
 
 %description
