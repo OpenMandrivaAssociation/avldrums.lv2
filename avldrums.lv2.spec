@@ -12,6 +12,7 @@ Url:		http://x42-plugins.com/x42/x42-avldrums
 Source0:	%{name}-%{version}.tar.xz
 BuildRequires:		pkgconfig(cairo)
 BuildRequires:		pkgconfig(gl)
+BuildRequires:		pkgconfig(glu)
 BuildRequires:		pkgconfig(glib-2.0)
 BuildRequires:		pkgconfig(lv2)
 BuildRequires:		pkgconfig(pango)
@@ -24,7 +25,7 @@ sequence and mix midi-drums.
 The main benefits compared to loading the soundfont into a generic sample
 player are:
 * built-in MIDNAM: The plugin informs the host about note-names.
-*  Semantic grouping of ports: fan-out separate mics to individual tracks.
+* Semantic grouping of ports: fan-out separate mics to individual tracks.
 * Compatible stereo/multi-out variant: it allows to in-place replace the
 stereo version with multi-out. Start with stereo when sequencing and when
 moving to the mixing stage use separate outputs to process or customize level
