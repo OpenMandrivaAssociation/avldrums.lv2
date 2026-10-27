@@ -2,9 +2,9 @@
 
 Summary:		A simple Drum Sample Player Plugin
 Name:	avldrums.lv2
-Version:		0.7.4
+Version:		0.7.6
 Release:		1
-License:		GPLv2
+License:		GPL-2.0-or-later
 Group:	Sound
 Url:		https://x42-plugins.com/x42/x42-avldrums
 # Submodules are a pain
@@ -24,7 +24,7 @@ BuildRequires:		pkgconfig(x11)
 This is a drum sample player plugin dedicated to Glen MacArthur's AVL
 Drumkits. This self-contained plugin provides a convenient way to rapidly
 sequence and mix midi-drums.
-The main benefits compared to loading the soundfont into a generic sample
+The main benefits compared to loading the sound font into a generic sample
 player are:
 * built-in MIDNAM: The plugin informs the host about note-names.
 * Semantic grouping of ports: fan-out separate mics to individual tracks.
@@ -42,6 +42,9 @@ and pan of individual drums.
 
 %prep
 %autosetup -p1
+
+# Fix FSF address
+sed -i 's/51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA/31 Milk Street, # 960789, Boston, MA 02196, USA/g' COPYING
 
 
 %build
